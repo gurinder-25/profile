@@ -6,20 +6,61 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
+    min-height: 100vh;
+    background-color: #ffffff;
     padding: 3rem 1.5rem;
     max-width: 42rem;
     margin: 0 auto;
+}
+
+header {
+    margin-bottom: 1rem;
 }
 
 h1 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: #000000;
 }
 
 .subtitle {
     color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+}
+
+.links a {
+    color: #2563eb;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.about-text {
+    color: #374151;
+    line-height: 1.625;
+    margin-bottom: 0.75rem;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
 }
