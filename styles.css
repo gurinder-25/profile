@@ -31,8 +31,14 @@ h1 {
 
 .subtitle {
     color: #4b5563;
+}
+
+.location {
+    color: #6b7280;
+    font-size: 0.875rem;
     margin-bottom: 1rem;
 }
+
 
 .links {
     display: flex;
