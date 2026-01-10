@@ -103,3 +103,29 @@ h3 {
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
 }
+
+.writing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.writing-item {
+    display: block;
+}
+
+.writing-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.writing-link:hover {
+    text-decoration: underline;
+}
+
+.writing-year {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
