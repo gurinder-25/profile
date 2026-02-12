@@ -8,4 +8,5 @@ export interface WorkExperience {
 export interface Writing {
   title: string;
   url: string;
+  date: string;
 }
