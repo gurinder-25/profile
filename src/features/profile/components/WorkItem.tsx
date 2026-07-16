@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { WorkExperience } from '../types';
+import type { WorkExperience } from '../../../types/profile';
 
 export const WorkItem: React.FC<WorkExperience> = ({ role, company, duration }) => {
   return (

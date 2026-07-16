@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* One palette for the whole site — profile, articles, and editor all sit on
+ * the same warm paper. */
+@theme {
+  --color-paper: #f7f6f2;
+  --color-ink: #201f1c;
+  --color-ink-soft: #55524a;
+  --color-faint: #a29d91;
+  --color-line: #e4e1d8;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--color-paper);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-line);
+  }
+}
+
+@layer components {
+
+  /* ── Shared ─────────────────────────────────────────── */
+
+  .page-wrapper {
+    @apply min-h-screen bg-paper;
+  }
+
+  .nav-link {
+    @apply inline-flex items-center gap-2 text-sm text-faint hover:text-ink transition-colors;
+  }
+
+  .section-label {
+    @apply text-sm font-bold uppercase tracking-[0.14em] text-ink mb-6;
+  }
+
+  /* ── Profile ────────────────────────────────────────── */
+
+  .page-main {
+    @apply max-w-2xl mx-auto px-6 pt-24 pb-24;
+  }
+
+  .page-header {
+    @apply mb-12;
+  }
+
+  .profile-name {
+    @apply text-4xl font-semibold tracking-tight mb-2;
+  }
+
+  .profile-role {
+    @apply text-lg text-ink-soft mb-1;
+  }
+
+  .profile-location {
+    @apply text-base text-faint mb-7;
+  }
+
+  .social-links {
+    @apply flex gap-6 text-base;
+  }
+
+  .social-link {
+    @apply text-ink-soft underline underline-offset-4 decoration-line hover:text-ink hover:decoration-faint transition-colors;
+  }
+
+  .page-section {
+    @apply mb-14 last:mb-0;
+  }
+
+  .about-description {
+    @apply text-lg text-ink-soft leading-relaxed;
+  }
+
+  .work-list {
+    @apply flex flex-col;
+  }
+
+  .writing-list {
+    @apply flex flex-col;
+  }
+
+  .work-item {
+    @apply mb-7 last:mb-0;
+  }
+
+  .work-item-header {
+    @apply flex justify-between items-baseline mb-0.5;
+  }
+
+  .work-item-role {
+    @apply text-lg font-medium;
+  }
+
+  .work-item-duration {
+    @apply text-[0.9375rem] text-faint whitespace-nowrap ml-4;
+  }
+
+  .work-item-company {
+    @apply text-base text-ink-soft;
+  }
+
+  .writing-item {
+    @apply flex items-baseline justify-between gap-6 mb-5 last:mb-0;
+  }
+
+  .writing-item-link {
+    @apply text-lg text-ink underline underline-offset-4 decoration-line hover:decoration-faint transition-colors;
+  }
+
+  .writing-item-date {
+    @apply text-[0.9375rem] text-faint whitespace-nowrap;
+  }
+
+  /* ── Article ────────────────────────────────────────── */
+
+  .article-main {
+    @apply max-w-2xl mx-auto px-6 py-16;
+  }
+
+  .article-header {
+    @apply mt-12 mb-10 pb-6 border-b border-line;
+  }
+
+  .article-title {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight leading-snug mb-3;
+  }
+
+  .article-meta {
+    @apply text-sm text-faint;
+  }
+
+  .article-footer {
+    @apply mt-14 pt-6 border-t border-line;
+  }
+
+  .block-heading {
+    @apply font-semibold tracking-tight mt-10 mb-3 leading-snug;
+  }
+
+  .article-text {
+    @apply text-xl text-ink-soft leading-[1.75];
+  }
+}

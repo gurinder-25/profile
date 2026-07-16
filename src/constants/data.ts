@@ -1,11 +1,4 @@
-import { WorkExperience, Writing } from '../types';
-
-export const TABS = {
-  ABOUT: 'About',
-  WORK: 'Work',
-  WRITING: 'Writing',
-} as const;
-export type Tab = typeof TABS[keyof typeof TABS];
+import type { WorkExperience } from '../types/profile';
 
 export const PROFILE = {
   NAME: 'Gurinder Singh',
@@ -28,13 +21,5 @@ export const WORK_HISTORY: WorkExperience[] = [
     role: 'Software Engineer Trainee',
     company: 'Finfactor',
     duration: 'Feb, 2025 - April, 2025',
-  },
-];
-
-export const WRITINGS: Writing[] = [
-  {
-    title: 'How Data-Driven Decisions Helped Me Avoid Over-Engineering',
-    url: 'https://blog.gurinder.dev/article/1',
-    date: 'January, 2026',
   },
 ];
