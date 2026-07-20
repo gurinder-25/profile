@@ -592,10 +592,7 @@ export const blocks: Block[] = [
         "type": "paragraph",
         "content": [
             {
-                "text": "My biggest takeaway from this is - "
-            },
-            {
-                "text": "Starting with the data, following where it leads, and I would've built exactly what was needed."
+                "text": "Having started with the data, following where it leads, and I would've built exactly what was needed."
             }
         ]
     }
